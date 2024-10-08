@@ -3,7 +3,8 @@
 该项目是一个基于Node.js的Express框架实现的TON本地节点监控块高程序。该程序使用了nodemailer和dotenv等库。
 
 ## 设计方式
-该程序使用了以下设计方式来实现查询块同步：
+使用Ton liteserver sdk查询本地区块数据。Ton liteserver sdk使用方式：支持js, python, go
+https://docs.ton.org/participate/run-nodes/enable-liteserver-node#interaction-with-liteserver-lite-client
 
 1. Ton Lite Client: 该程序使用了Ton Lite Client库来连接Ton本地节点并查询块同步信2息。Ton Lite Client提供了一个简单的API来查询块同步信息，包括当前块高、块哈希等。
 2. getTonSync函数: 该函数封装了Ton Lite Client的API来查询块同步信息。该函数每5分钟执行一次，查询当前的块高和块哈希，并将结果存储在变量中。

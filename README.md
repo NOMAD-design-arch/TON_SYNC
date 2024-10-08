@@ -1,6 +1,6 @@
 # TON本地节点监控块高程序
 
-该项目是一个基于Node.js的Express框架实现的TON本地节点监控块高程序。该程序使用了Ton liteserver sdk，nodemailer和dotenv等库。
+该项目是一个基于Node.js的Express框架实现的TON本地节点监控块高程序。该程序使用了Ton liteserver sdk，nodemailer和express等库。
 
 ## 设计方式
 - 使用Ton liteserver sdk查询本地区块数据。Ton liteserver sdk使用方式：支持js, python, go

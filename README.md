@@ -20,6 +20,12 @@ https://toncenter.com/
 4. 返回这两个差异值中较大的一个作为节点与主链的时间同步差异 (out_of_sync)，单位为秒。
 5. 通过阈值20秒，判断节点是否与主链保持同步。
 
+## Ton liteServer环境配置
+- 进入mytonctrl控制台，输入命令installer，进入installer模式。输入命令clcf生成本地配置文件local.config.json
+操作链接说明 https://docs.ton.org/participate/run-nodes/mytonctrl#clcf
+- 查看并记录本地文件local.config.json的liteservers配置 ip, port, id ，后续需要配置在ton liteServer sdk中。
+命令示例 sudo cat /usr/bin/ton/local.config.json
+操作链接说明 https://docs.ton.org/participate/run-nodes/enable-liteserver-node#interaction-with-liteserver-lite-client
 ## 安装
 需要 node -v v20.18.0
 1. 在终端中导航到项目根目录。

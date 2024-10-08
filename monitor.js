@@ -54,7 +54,7 @@ async function monitorSync() {
 }
 
 // 每5分钟（600000毫秒）执行一次监控
-setInterval(monitorSync, 1 * 60 * 1000);
+setInterval(monitorSync, 5 * 60 * 1000);
 
 // 更新同步信息的函数（示例）
 function updateSyncInfo(syncHeight) {

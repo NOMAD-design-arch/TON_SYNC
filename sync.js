@@ -55,9 +55,9 @@ async function getPublicMasterchainInfo() {
 async function getTonSync(){
     console.log('get master info');
     const master = await client.getMasterchainInfoExt(); // 获取客户端主链信息
-    console.log('master', master);
+    //console.log('master', master);
     const publicMaster = await getPublicMasterchainInfo(); // 获取公共主链信息
-    console.log('publicMaster', publicMaster);
+    //console.log('publicMaster', publicMaster);
     const NodeTimeDifference = Math.abs(publicMaster.seqno - master.last.seqno); // 计算序列号差异
     console.log(`Node Time difference: ${NodeTimeDifference} seconds`);
     const blockTimeDifference = Math.abs(master.now - master.lastUtime); // 计算时间戳差异

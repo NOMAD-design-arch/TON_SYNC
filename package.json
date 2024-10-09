@@ -1,9 +1,10 @@
 {
-  "name": "ton_sync",
+  "name": "ton_sync_api",
   "version": "1.0.0",
-  "main": "sync.js",
+  "main": "api.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node api.js"
   },
   "author": "",
   "license": "ISC",
